@@ -14,7 +14,7 @@ namespace GESTOR_ESTOQUE.Class
         private string nomeFantasia;
 
         public Fornecedor() : base()
-        {   
+        {
         }
 
         public Fornecedor(string cnpj) : base()
@@ -32,6 +32,36 @@ namespace GESTOR_ESTOQUE.Class
         {
             this.cnpj = cnpj;
             this.razaoSocial = razaoSocial;
+            this.nomeFantasia = nomeFantasia;
+        }
+
+        public string getCnpj()
+        {
+            return this.cnpj;
+        }
+
+        public void setCnpj(string cnpj)
+        {
+            this.cnpj = cnpj;
+        }
+
+        public string getRazaoSocial()
+        {
+            return this.razaoSocial;
+        }
+
+        public void setRazaoSocial(string razaoSocial)
+        {
+            this.razaoSocial = razaoSocial;
+        }
+
+        public string getNomeFantasia()
+        {
+            return this.nomeFantasia;
+        }
+
+        public void setNomeFantasia(string nomeFantasia)
+        {
             this.nomeFantasia = nomeFantasia;
         }
     }

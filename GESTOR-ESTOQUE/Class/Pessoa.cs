@@ -14,6 +14,7 @@ namespace GESTOR_ESTOQUE.Class
         private string email;
         private string telefone;
         private string endereco;
+        private string CPF;
 
         public Pessoa()
         {
@@ -45,5 +46,59 @@ namespace GESTOR_ESTOQUE.Class
             this.endereco = endereco;
         }
 
+        public int getPessoaID()
+        {
+            return this.pessoaID;
+        }
+
+        public string getNome()
+        {
+            return this.nome;
+        }
+
+        public void setNome(string nome)
+        {
+            this.nome = nome;
+        }
+
+        public string getEmail()
+        {
+            return this.email;
+        }
+
+        public void setEmail(string email)
+        {
+            this.email = email;
+        }
+
+        public string getTelefone()
+        {
+            return this.telefone;
+        }
+
+        public void setTelefone(string telefone)
+        {
+            this.telefone = telefone;
+        }
+
+        public string getEndereco()
+        {
+            return this.endereco;
+        }
+
+        public void setEndereco(string endereco)
+        {
+            this.endereco = endereco;
+        }
+
+        public string getCPF()
+        {
+            return this.CPF;
+        }
+
+        public void setCPF(string CPF)
+        {
+            this.CPF = CPF;
+        }
     }
 }
