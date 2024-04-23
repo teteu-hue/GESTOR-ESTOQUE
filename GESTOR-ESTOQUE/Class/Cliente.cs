@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GESTOR_ESTOQUE.Class
 {
-    class Cliente
+    class Cliente : Pessoa
     {
         private int clienteID;
 

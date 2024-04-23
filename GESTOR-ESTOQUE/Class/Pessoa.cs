@@ -10,11 +10,81 @@ namespace GESTOR_ESTOQUE.Class
     class Pessoa
     {
         private int pessoaID;
+        public int PessoaID
+        {
+            get
+            {
+                return pessoaID;
+            }
+        }
+
         private string nome;
+        public string Nome 
+        { 
+            get
+            {
+                return this.nome;
+            }
+            set
+            {
+                this.nome = value;
+            }
+        }
+
         private string email;
+        public string Email 
+        {
+            get
+            {
+                return this.email;
+            }
+
+            set
+            {
+                this.email = value;
+            }
+        }
+
         private string telefone;
+        public string Telefone 
+        {
+            get
+            {
+                return this.telefone;
+            }
+
+            set
+            {
+                this.telefone = value;
+            }
+        }   
+
         private string endereco;
-        private string CPF;
+        public string Endereco
+        {
+            get
+            {
+                return this.endereco;
+            }
+
+            set
+            {
+                this.endereco = value;
+            }
+        }
+
+        private string Cpf;
+        public string CPF
+        {
+            get 
+            {
+                return this.Cpf;
+            }
+            set
+            {
+                this.Cpf = value;
+            }
+        }
 
         public Pessoa()
         {
@@ -46,59 +116,7 @@ namespace GESTOR_ESTOQUE.Class
             this.endereco = endereco;
         }
 
-        public int getPessoaID()
-        {
-            return this.pessoaID;
-        }
 
-        public string getNome()
-        {
-            return this.nome;
-        }
-
-        public void setNome(string nome)
-        {
-            this.nome = nome;
-        }
-
-        public string getEmail()
-        {
-            return this.email;
-        }
-
-        public void setEmail(string email)
-        {
-            this.email = email;
-        }
-
-        public string getTelefone()
-        {
-            return this.telefone;
-        }
-
-        public void setTelefone(string telefone)
-        {
-            this.telefone = telefone;
-        }
-
-        public string getEndereco()
-        {
-            return this.endereco;
-        }
-
-        public void setEndereco(string endereco)
-        {
-            this.endereco = endereco;
-        }
-
-        public string getCPF()
-        {
-            return this.CPF;
-        }
-
-        public void setCPF(string CPF)
-        {
-            this.CPF = CPF;
-        }
+ 
     }
 }
