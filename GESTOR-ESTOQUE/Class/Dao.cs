@@ -21,31 +21,40 @@ namespace KMysqlNet
     {
 
         private string sql;
+        private string server = "192.168.8.10";
+        private string port = "3306";
+        private string dbname = "grupo03";
+        private string username = "grupo03";
+        private string password = "password";
 
-        private string conexaostring;
-        public MySqlCommand cmd;
+        protected MySqlCommand cmd;
 
-        public MySqlConnection conexao;
+        protected MySqlConnection connection;
 
-        public MySqlDataReader reader;
+        protected MySqlDataReader reader;
 
 
         public Dao()
-
         {
+
+            this.connection = this.getConnection();
 
         }
 
-        public void inserirUsuario(string usuario, string senha)
-
+        private MySqlConnection getConnection()
         {
+            string connectionString = $"Server={this.server};Port={this.port};Database={this.dbname};Uid={username};Pwd='{password}';";
 
-        }
-
-        public void removerUsuario(int id)
-
-        {
-
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                return connection;
+            } 
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return null;
         }
 
     }

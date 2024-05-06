@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace GESTOR_ESTOQUE.Class
 {
-    class Cliente : Pessoa
+    class Funcionario : Pessoa
     {
-        private int clienteID;
+        private int funcionarioID;
+        private int salario;
 
-        public int getClienteID()
+        public Funcionario() : base()
         {
-            return this.clienteID;
         }
 
-        public void setClienteID(int clienteID)
+        public int getFuncionarioID()
         {
-            this.clienteID = clienteID;
+            return this.funcionarioID;
         }
+
+        public void setFuncionarioID(int funcionarioID)
+        {
+            this.funcionarioID = funcionarioID;
+        }
+
     }
 }
