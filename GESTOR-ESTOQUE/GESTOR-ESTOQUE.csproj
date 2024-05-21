@@ -51,6 +51,7 @@
     <Compile Include="Class\Dao.cs" />
     <Compile Include="Class\Fornecedor.cs" />
     <Compile Include="Class\Pessoa.cs" />
+    <Compile Include="model\DbPessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,5 +62,6 @@
   <ItemGroup>
     <Content Include="Database\Database.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

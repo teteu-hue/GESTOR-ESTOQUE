@@ -7,83 +7,19 @@ using System.Threading.Tasks;
 
 namespace GESTOR_ESTOQUE.Class
 {
-    class Pessoa 
+    abstract class Pessoa 
     {
-        private int pessoaID;
-        public int PessoaID
-        {
-            get
-            {
-                return pessoaID;
-            }
-        }
+        protected string Nome { get; set; }
 
-        private string nome;
-        public string Nome 
-        { 
-            get
-            {
-                return this.nome;
-            }
-            set
-            {
-                this.nome = value;
-            }
-        }
+        public string Email { get; set; }
 
-        private string email;
-        public string Email 
-        {
-            get
-            {
-                return this.email;
-            }
+        public string Telefone { get; set; }   
 
-            set
-            {
-                this.email = value;
-            }
-        }
+        public string Endereco { get; set; }
 
-        private string telefone;
-        public string Telefone 
-        {
-            get
-            {
-                return this.telefone;
-            }
-
-            set
-            {
-                this.telefone = value;
-            }
-        }   
-
-        private string endereco;
-        public string Endereco
-        {
-            get
-            {
-                return this.endereco;
-            }
-
-            set
-            {
-                this.endereco = value;
-            }
-        }
-
-        private string Cpf;
-        public string CPF
-        {
-            get 
-            {
-                return this.Cpf;
-            }
-            set
-            {
-                this.Cpf = value;
-            }
+        public string CPF {
+            get;
+            set;
         }
 
         public Pessoa()
@@ -92,28 +28,28 @@ namespace GESTOR_ESTOQUE.Class
 
         public Pessoa(string nome)
         {
-            this.nome = nome;
+            Nome = nome;
         }
 
         public Pessoa(string nome, string email)
         {
-            this.nome = nome;
-            this.email = email;
+            Nome = nome;
+            Email = email;
         }
 
         public Pessoa(string nome, string email, string telefone)
         {
-            this.nome = nome;
-            this.email = email;
-            this.telefone = telefone;
+            Nome = nome;
+            Email = email;
+            Telefone = telefone;
         }
 
         public Pessoa(string nome, string email, string telefone, string endereco)
         {
-            this.nome = nome;
-            this.email = email;
-            this.telefone = telefone;
-            this.endereco = endereco;
+            Nome = nome;
+            Email = email;
+            Telefone = telefone;
+            Endereco = endereco;
         }
 
 

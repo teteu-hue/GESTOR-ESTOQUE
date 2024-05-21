@@ -1,4 +1,5 @@
 ﻿using GESTOR_ESTOQUE.Class;
+using GESTOR_ESTOQUE.model;
 using KMysqlNet;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,8 @@ namespace GESTOR_ESTOQUE
     {
         static void Main(string[] args)
         {
-            Dao db = new Dao();
-            
-            Console.WriteLine(db);
+            DbPessoa dbPessoa = new DbPessoa();
+            dbPessoa.mostrarPessoas();
             Console.ReadKey();
         }
     }
