@@ -17,18 +17,30 @@ namespace GESTOR_ESTOQUE.model
         {
             this.connection.OpenAsync();
 
-            this.sql = "SELECT * FROM pessoa";
+            sql = "SELECT * FROM fornecedor";
 
-            this.cmd = new MySqlCommand(this.sql, this.connection);
+            this.cmd = new MySqlCommand(sql, this.connection);
 
-            this.reader = cmd.ExecuteReader();
-
-            while (this.reader.Read())
+            try 
             {
-                Console.WriteLine(this.reader[0]);    
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Console.WriteLine(reader[0]);
+                }
+                reader.Close();
+                this.connection.Close();
             }
-            reader.Close();
-            this.connection.Close();
+            catch (KeyNotFoundException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
     }

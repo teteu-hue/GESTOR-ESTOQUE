@@ -13,9 +13,15 @@ namespace GESTOR_ESTOQUE
     {
         static void Main(string[] args)
         {
-            DbPessoa dbPessoa = new DbPessoa();
-            dbPessoa.mostrarPessoas();
-            Console.ReadKey();
+            int option = 0;
+                Console.WriteLine("Bem vindo ao gerenciador de produtos");
+           do
+            {
+                Console.WriteLine("Digite a opção 0 para sair");
+                
+                
+
+            } while(option != 0);
         }
     }
 }

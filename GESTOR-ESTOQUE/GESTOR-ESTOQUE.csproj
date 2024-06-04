@@ -51,7 +51,10 @@
     <Compile Include="Class\Dao.cs" />
     <Compile Include="Class\Fornecedor.cs" />
     <Compile Include="Class\Pessoa.cs" />
+    <Compile Include="Class\Produto.cs" />
+    <Compile Include="Class\Usuario.cs" />
     <Compile Include="model\DbPessoa.cs" />
+    <Compile Include="model\DbUsuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

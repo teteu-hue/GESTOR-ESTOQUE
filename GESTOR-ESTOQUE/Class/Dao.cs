@@ -40,7 +40,7 @@ namespace KMysqlNet
 
         private MySqlConnection getConnection()
         {
-            string connectionString = $"Server={this.server};Port={this.port};Database={this.dbname};Uid={username};Pwd='{password}';";
+            string connectionString = $"Server={this.server};Port={this.port};Database={this.dbname};Uid={username};Pwd='{password}';charset=utf8mb4;";
 
             MySqlConnection connection = new MySqlConnection(connectionString);
             Console.WriteLine($"Connection in database: {this.dbname}");
