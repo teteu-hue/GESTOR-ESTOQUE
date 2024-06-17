@@ -15,7 +15,7 @@ namespace GESTOR_ESTOQUE.model
 
         public void mostrarPessoas()
         {
-            this.connection.OpenAsync();
+            this.connection.Open();
 
             sql = "SELECT * FROM fornecedor";
 

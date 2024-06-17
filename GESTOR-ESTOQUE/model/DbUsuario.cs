@@ -16,7 +16,7 @@ namespace GESTOR_ESTOQUE.model
         {
             string sql = "select * from usuario;";
 
-            this.connection.OpenAsync();
+            this.connection.Open();
 
             this.cmd = new MySqlCommand(sql, this.connection);
 

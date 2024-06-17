@@ -21,11 +21,11 @@ namespace KMysqlNet
 
     {
 
-        private string server = "192.168.8.10";
+        private string server = "localhost";
         private string port = "3306";
-        private string dbname = "grupo03";
-        private string username = "grupo03";
-        private string password = "password";
+        private string dbname = "estoque";
+        private string username = "root";
+        private string password = "root";
 
         protected MySqlCommand cmd;
         protected MySqlConnection connection;
@@ -47,9 +47,9 @@ namespace KMysqlNet
             try
             {
                 Console.WriteLine("Establishing connection...\n");
-                connection.OpenAsync();
+                connection.Open();
                 Thread.Sleep(2000);
-                Console.WriteLine("\nEstablished connection!");
+                Console.WriteLine("Established connection!");
                 Thread.Sleep(2000);
                 Console.Clear();
                 connection.Close();
