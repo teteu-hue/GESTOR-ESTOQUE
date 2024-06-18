@@ -9,7 +9,7 @@ preco int not null
 );
 
 CREATE TABLE MovimentacaoEstoque (
-    ID_Movimentacao INT PRIMARY KEY,
+    ID_Movimentacao INT PRIMARY KEY, 
     ID_Produto INT,
     TipoMovimentacao NVARCHAR(50),
     QuantidadeMovimentada INT,
