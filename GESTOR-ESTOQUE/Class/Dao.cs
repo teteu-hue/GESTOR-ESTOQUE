@@ -25,7 +25,7 @@ namespace KMysqlNet
         private string port = "3306";
         private string dbname = "estoque";
         private string username = "root";
-        private string password = "root";
+        private string password = "";
 
         protected MySqlCommand cmd;
         protected MySqlConnection connection;

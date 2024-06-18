@@ -2,15 +2,10 @@ create database estoque;
 use estoque;
 
 
-CREATE TABLE Produto (
-ID_Produto INT PRIMARY KEY,
-Nome_Produto VARCHAR(10),
-ID_setor NVARCHAR(255),
-ID_unidade_peso NVARCHAR(50),
-ID_Fornecedor INT,
-Observacao varchar(40),
-Estado TINYINT(1),
-FOREIGN KEY (ID_Fornecedor) REFERENCES Fornecedor(ID_Fornecedor)
+CREATE TABLE produto (
+id_produto INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nome VARCHAR(50) NOT NULL,
+preco int not null
 );
 
 CREATE TABLE MovimentacaoEstoque (
